@@ -2,6 +2,7 @@ Feature: Verify Setting Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
+    And User selects language option
     When User clicks on look up values icon on left tool bar
 
   @Sanity
@@ -17,13 +18,14 @@ Feature: Verify Setting Module Features
     Then Manage pet breed page displays with all task details
 
 
+
 #  @Sanity
 #  Scenario:Edit Pet Breed page displays upon clicking on edit icon against pet breed name on manage pet breed page
 #    When User clicks on pet breed icon on setting page
 #    And User clicks on edit icon against pet breed  name on manage pet breed page
 #    Then Edit pet breed page displays in editable format
 
-    ##Exclusion Page
+   #Exclusion Page
 
   @Sanity
   Scenario: To verify whether Manage Exclusion page displays with exclusion details by clicking on exclusion icon on setting page
@@ -50,13 +52,12 @@ Feature: Verify Setting Module Features
     Then Manage regular vet displays with all task details
 
 
+
       ##Hear About Us
 
   @Sanity
   Scenario: To verify whether Manage hear about us page displays with  details by clicking on hear about us icon on setting page
     When User clicks on hear about us icon on setting page
     Then Manage hear about us page displays with all task details
-
-
 
 

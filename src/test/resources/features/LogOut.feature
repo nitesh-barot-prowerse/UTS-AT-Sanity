@@ -2,6 +2,7 @@ Feature: Verify Log out functionality
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
+    And User selects language option
 
   @Sanity
   Scenario: Verify log out feature of system

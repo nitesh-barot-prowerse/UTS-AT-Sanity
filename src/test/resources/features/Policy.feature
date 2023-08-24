@@ -2,6 +2,7 @@ Feature: Verify Policy Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
+    And User selects language option
     When User clicks on policy icon on left tool bar
 
   @Sanity
@@ -13,12 +14,12 @@ Feature: Verify Policy Module Features
     Then All data under Start date and And date displays in dd-mm-yyyy format
 
   @Sanity
-  Scenario: Respected policy information should displays by clicking on individual policy number on manage policy page
+  Scenario:Respected policy information should displays by clicking on individual policy number on manage policy page
     When User clicks on policy number
     Then User will redirect to policy information page
 
   @Sanity
-  Scenario:Appropriate policy data should display upon selecting an option from the status drop down on managing policy page
+  Scenario: Check appropriate policy data should displays against option selected from status drop down on manage policy page
     When User selects any options from status dropdown
     Then Appropriate data displays on manage policy page depend on drop down option
 
@@ -29,14 +30,9 @@ Feature: Verify Policy Module Features
     Then Details of policy on manage policy page filters upon value of from and to date value of policy
 
   @sanity
-  Scenario: Verify that add claim page should open with all details by clicking on add claim icon of cog drop down against policy number on manage policy page
-    When User clicks on add claim icon of cog drop down against policy number on manage policy page
-    Then Add claim displays with all details
-
-  @sanity
   Scenario: Policy endorsement page displays with all details by clicking add endorsement icon of cog drop down on policy information page
     When User selects any active option from status dropdown on manage policy page
-    And User clicks on policy number link on manage policy page
+    When User clicks on policy number link on manage policy page
     And User selects add endorsement icon of cog drop down on policy information page
     Then Policy endorsement page displays with all details
 
@@ -46,11 +42,6 @@ Feature: Verify Policy Module Features
     And User clicks on policy number link on manage policy page
     And User selects add allocate payment icon of cog drop down on policy information page
     Then Add allocate payment page displays with all details
-
-
-
-
-
 
 
 

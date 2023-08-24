@@ -1,7 +1,8 @@
-Feature: Verify Approve Claim  Module Features
+Feature: V Verify Approve Claim  Module Features
 
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
+    And User selects language option
     When User clicks on approve claims icon on left tool bar
 
   @Sanity
