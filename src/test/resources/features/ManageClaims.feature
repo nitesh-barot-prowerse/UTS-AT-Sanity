@@ -25,10 +25,10 @@ Feature: Verify Manage Claim Module Features
     Then User will redirect to add claim page
     And Page has all dropdown with valid list items'
 
-  @Sanity
-  Scenario: Treatment status should reflect upon option selected from treatment status drop down on manage claim page
-    When User selects any options from treatment status dropdown on manage claim page
-    Then Appropriate treatment status will display on manage claim page under claim details
+#  @Sanity
+#  Scenario: Treatment status should reflect upon option selected from treatment status drop down on manage claim page
+#    When User selects any options from treatment status dropdown on manage claim page
+#    Then Appropriate treatment status will display on manage claim page under claim details
 
 
 

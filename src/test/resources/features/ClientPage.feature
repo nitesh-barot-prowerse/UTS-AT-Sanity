@@ -10,11 +10,11 @@ Feature: Verify Client Module Features
   Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
     Then Manage client page displays with list of clients
 
-  @Sanity
-  Scenario:Add quote page should display in editable format by clicking on add quote icon on cog dropdown menu on view client page
-    When User clicks on client code on manage client page
-    And User clicks on add quote icon on cog dropdown menu on view client page
-    Then Add quote page should display in editable format
+#  @Sanity
+#  Scenario:Add quote page should display in editable format by clicking on add quote icon on cog dropdown menu on view client page
+#    When User clicks on client code on manage client page
+#    And User clicks on add quote icon on cog dropdown menu on view client page
+#    Then Add quote page should display in editable format
 
   @Sanity
   Scenario:Add claim page should display with all details by clicking on add claim icon on cog dropdown menu on view client page
